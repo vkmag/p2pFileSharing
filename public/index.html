@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Sharing App</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+  </head>
+  <body>
+    <h1>File Sharing App</h1>
+    <div class="toggle-container">
+      <button id="send-button" onclick="showSendContent()">Send File</button>
+      <button id="receive-button" onclick="showReceiveContent()">Receive File</button>
+  </div>
+    <!-- <div id="socketIdContainer">Session ID: <span id="socketId"></span></div> -->
+    <div class="container">
+      
+    <div class="left-container">
+     
+      <p class="label">File ID: <span id="roomId"></span></p>
+      <div id="dropArea" class="drop-area">
+        <p>Drag and drop files here or</p>
+        <button id="browseFile">Browse for files</button>
+      </div>
+      <input type="file" id="fileInput" style="display: none" />
+      <div id="fileInfo">
+        <p id="selectedFileName"></p>
+        <button id="submitFile">Send</button>
+      </div>
+      
+    </div>
+    
+      <div class="right-container">
+        
+        <div>
+          <label for="roomIdInput" class="label">Enter File ID: </label>
+          <input type="text" id="roomIdInput" />
+          <button id="joinRoom">Submit</button>
+        </div>
+        
+        <div id="fileListDiv">
+          <h2 class="messageHeader">Recived Files:</h2>
+          <ul id="fileList"></ul>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

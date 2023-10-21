@@ -1,0 +1,204 @@
+body {
+  background-color: #ffffff;
+  color: #5c5c5c;
+  font-family: sans-serif;
+  /* background-image: url('3185113.jpg');
+  background-attachment: fixed; */
+  background: linear-gradient(90deg, #FFA500, #FF69B4);
+  background-size: cover;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.left-container {
+  background-color: #ffffff42;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(5, 5, 5, 0.5);
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-family: "Audiowide", sans-serif;
+  font-size: 18px;
+  text-shadow: 4px 4px 4px rgb(132, 139, 98);
+  color: #000000;
+  
+}
+
+.right-container {
+  display:none;
+  background-color: #ffffff42;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(5, 5, 5, 0.5);
+  width: 50%;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#userdiv {
+  margin-top: 40px;
+}
+
+
+
+button {
+  background-color: #4360f3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submitFile {
+  background-color: #4360f3;
+}
+
+#fileInput {
+  display: none;
+}
+
+.drop-area {
+  margin-top: 10px;
+  border: 2px dashed #ff00c8;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+ 
+}
+
+.drop-area:hover {
+  border-color: #28a745;
+}
+
+#roomId {
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #454545;
+}
+
+#joinRoom {
+  background-color: #4360f3;
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#joinRoom:hover {
+  background-color: #ff41c6;
+}
+
+#submitFile {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submitFile:hover {
+  background-color: #1d8235;
+}
+
+
+
+#fileListDiv {
+  background-color: #8e8e8e2f;
+  border: 1px solid #717171;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#fileList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+}
+
+#fileList li {
+  padding: 10px;
+  border: 1px solid #1f1f1f;
+  background-color: #d1d1d164;
+  color: #2f2f2f;
+  border-radius: 5px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#fileList li:hover {
+  background-color: #f3f3f3a0;
+}
+
+#fileList li a {
+  text-decoration: none;
+  color: #4f58ff;
+  
+}
+
+#fileList li a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  
+  color: #000000;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+#roomIdInput {
+  height: 20px;
+}
+
+#selectedFileName {
+  
+  color: #fcfcfca3;
+}
+
+.toggle-container {
+  
+  text-align: center;
+  margin-top: 35px;
+}
+#send-button{
+  background-color: #4360f3;
+}
+#receive-button{
+  background-color: #97a8ff;
+}
